@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table>
+<thead>
+<tr>
+<td>id</td>
+<td>name</td>
+</tr>
+</thead>
+
+<tbody>
+<tr th:each="b:${objects}">
+<td th:text="${b.id}"></td>
+<td th:text="${b.name}"></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
